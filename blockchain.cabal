@@ -1,0 +1,22 @@
+name: blockchain
+version: 0.1.0.0
+license: BSD3
+license-file: LICENSE
+author: iokasimov
+maintainer: iokasimov@gmail.com
+category: Web
+build-type: Simple
+extra-source-files: README.md
+cabal-version: >=1.10
+
+library
+  build-depends: base, cryptohash, free
+  exposed-modules: Data.Block, Data.Chain
+  default-extensions: ExistentialQuantification
+  default-language: Haskell2010
+
+executable blockchain
+  main-is: Main.hs
+  build-depends: base, cryptohash, free
+  default-extensions: ExistentialQuantification
+  default-language: Haskell2010
